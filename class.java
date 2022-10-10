@@ -13,9 +13,9 @@ class Animal {
     }
 }
 
-class Dog extends Animal{
-    public String run(name) {
-        return "I am " + name + ", I can run."
+class human extends Animal{
+    public String talk(name) {
+        return "Hello, I am " + name + "."
     }
 
 }
