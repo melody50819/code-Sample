@@ -5,7 +5,7 @@ class Animal {
     public String run() {
         return "I can run."
     }
-    public String run(name) {
+    public String run(String name) {
         return "I am " + name + ", I can run."
     }
     public String jump() {
@@ -13,17 +13,19 @@ class Animal {
     }
 }
 
-class human extends Animal{
+class people extends Animal{
     public String talk(name) {
         return "Hello, I am " + name + "."
     }
-
+    public String run(String name) {
+        return "I am " + name + ", I can run."
+    }
 }
 
 public static void main() {
-    Animal dog = new Animal("Dog");
-    Animal cat = new Animal("Cat");
+    Animal dog = new Animal();
+    Animal cat = new Animal();
 
-    dog.run();
+    dog.run("white");
     cat.jump();
 }
