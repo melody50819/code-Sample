@@ -25,8 +25,10 @@ class Dog(Animal):
 
 a = Animal("a")
 b = Animal('b')
-c = Dog('lucky')
 
 a.run()
 b.jump()
+
+
+c = Dog('lucky')
 c.run()
