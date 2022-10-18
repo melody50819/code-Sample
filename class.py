@@ -5,28 +5,28 @@ class Animal:
     def getFeatures():
         pass
 
-    def run(self, name):
+    def run(self):
         return "I can run."
     
-    def jump(self, name):
+    def jump(self):
         return "I can jump."
 
 
 class Dog(Animal):
-    def sit(name):
+    def __init__(self, name):
+        self.name = name
+
+    def sit(self):
         return "I am Dog, I can sit."
     
-    def run():
-        return "I am runing."
-
-    def run(name): 
-        return "I am Dog, I can run."
+    def run(self):
+        return "I am " + self.name + ", I can runing."
 
 
 a = Animal("a")
 b = Animal('b')
-c = Dog('white')
+c = Dog('lucky')
 
-a.run("a")
-b.jump("b")
+a.run()
+b.jump()
 c.run()
