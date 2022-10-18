@@ -16,7 +16,10 @@ class Dog(Animal):
     def sit(name):
         return "I am Dog, I can sit."
     
-    def run(name):
+    def run():
+        return "I am runing."
+
+    def run(name): 
         return "I am Dog, I can run."
 
 
