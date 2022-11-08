@@ -6,7 +6,7 @@ class Animal:
         pass
 
     def run(self):
-        return "I can run."
+        return "I am " + self.name + ",I can run."
     
     def jump(self):
         return "I can jump."
@@ -20,14 +20,14 @@ class Dog(Animal):
         return "I am Dog, I can sit."
     
     def run(self):
-        return "I am " + self.name + ", I can runing."
+        return "I am " + self.name + ", I run faster than other animals."
 
 
 a = Animal("a")
 b = Animal('b')
 
 a.run()
-b.jump()
+b.jump() 
 
 
 c = Dog('lucky')
